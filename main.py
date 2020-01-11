@@ -27,5 +27,5 @@ for key in mainDict:
     print(key)
     mainDict[key]['mobile'] = page.testSujan().getPhoneList(mainDict[key]['link'], mainDict[key]['mobile'])
 
-with open("/root/Downloads/main.json", "w") as file:
+with open("mainList.json", "w") as file:
     json.dump(mainDict, file, indent=4)
